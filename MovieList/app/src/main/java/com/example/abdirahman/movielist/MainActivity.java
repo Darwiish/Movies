@@ -1,9 +1,13 @@
 package com.example.abdirahman.movielist;
 
+import android.app.ListActivity;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+import com.easv.oe.movielist.R;
+
+public class MainActivity extends ListActivity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
