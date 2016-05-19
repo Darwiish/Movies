@@ -1,4 +1,4 @@
-package com.example.abdirahman.movielist;
+package com.example.abdirahman.movielist.Gui;
 
 import android.app.ListActivity;
 import android.content.Intent;
@@ -8,10 +8,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 
-import com.example.abdirahman.movielist.DALC.DAO;
-import com.example.abdirahman.movielist.DALC.DB;
-import com.example.abdirahman.movielist.DALC.Movie;
-import com.example.abdirahman.movielist.DALC.MovieList;
+import com.example.abdirahman.movielist.MovieDALC.DAO;
+import com.example.abdirahman.movielist.MovieDALC.DB;
+import com.example.abdirahman.movielist.Model.Movie;
+import com.example.abdirahman.movielist.MovieDALC.MovieList;
 
 import java.util.ArrayList;
 

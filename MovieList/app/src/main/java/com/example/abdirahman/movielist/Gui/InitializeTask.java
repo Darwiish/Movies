@@ -1,4 +1,4 @@
-package com.example.abdirahman.movielist;
+package com.example.abdirahman.movielist.Gui;
 
 /* Uses AsyncTask to create a task away from the main UI thread. This task takes a
     URL string and uses it to create an HttpUrlConnection. Once the connection
@@ -9,8 +9,8 @@ package com.example.abdirahman.movielist;
 
 import android.os.AsyncTask;
 
-import com.example.abdirahman.movielist.DALC.Movie;
-import com.example.abdirahman.movielist.DALC.MovieList;
+import com.example.abdirahman.movielist.Model.Movie;
+import com.example.abdirahman.movielist.MovieDALC.MovieList;
 
 import java.util.ArrayList;
 

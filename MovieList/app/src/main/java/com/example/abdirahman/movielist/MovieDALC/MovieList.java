@@ -1,6 +1,8 @@
-package com.example.abdirahman.movielist.DALC;
+package com.example.abdirahman.movielist.MovieDALC;
 
 import android.util.Log;
+
+import com.example.abdirahman.movielist.Model.Movie;
 
 import org.json.JSONArray;
 import org.json.JSONException;

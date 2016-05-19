@@ -1,4 +1,4 @@
-package com.example.abdirahman.movielist;
+package com.example.abdirahman.movielist.Gui;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -11,8 +11,9 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.abdirahman.movielist.DALC.DAO;
-import com.example.abdirahman.movielist.DALC.Movie;
+import com.example.abdirahman.movielist.MovieDALC.DAO;
+import com.example.abdirahman.movielist.Model.Movie;
+import com.example.abdirahman.movielist.R;
 
 
 public class DetailActivity extends AppCompatActivity {

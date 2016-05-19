@@ -1,9 +1,11 @@
-package com.example.abdirahman.movielist.DALC;
+package com.example.abdirahman.movielist.MovieDALC;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+
+import com.example.abdirahman.movielist.Model.Movie;
 
 
 public class DAO {

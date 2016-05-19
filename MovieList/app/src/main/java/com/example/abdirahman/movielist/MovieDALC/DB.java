@@ -1,4 +1,4 @@
-package com.example.abdirahman.movielist.DALC;
+package com.example.abdirahman.movielist.MovieDALC;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

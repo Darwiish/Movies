@@ -1,10 +1,10 @@
-package com.example.abdirahman.movielist;
+package com.example.abdirahman.movielist.Gui;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 
-import com.example.abdirahman.movielist.DALC.Movie;
+import com.example.abdirahman.movielist.Model.Movie;
 
 import java.io.InputStream;
 import java.net.URL;

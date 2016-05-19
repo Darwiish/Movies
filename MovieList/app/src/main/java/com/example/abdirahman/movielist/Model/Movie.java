@@ -1,4 +1,4 @@
-package com.example.abdirahman.movielist.DALC;
+package com.example.abdirahman.movielist.Model;
 
 import android.graphics.Bitmap;
 

@@ -1,4 +1,4 @@
-package com.example.abdirahman.movielist;
+package com.example.abdirahman.movielist.Gui;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -8,7 +8,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.abdirahman.movielist.DALC.Movie;
+import com.example.abdirahman.movielist.Model.Movie;
+import com.example.abdirahman.movielist.R;
 
 import java.util.ArrayList;
 

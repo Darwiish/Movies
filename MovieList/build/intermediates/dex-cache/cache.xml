@@ -2,27 +2,6 @@
 <items version="2" >
 
     <item
-        jar="/Users/abdirahman/Desktop/Movies/MovieList/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.2.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="d4c936aa8c7d2522c82e3f1829c791d9e367f009">
-        <dex dex="/Users/abdirahman/Desktop/Movies/MovieList/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.2.0_a3f76c6b67a6101fbf104aa247f2dbacd08f9663.jar" />
-    </item>
-    <item
-        jar="/Users/abdirahman/Desktop/Movies/MovieList/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="e5f32fa48a3eb2de0c987025c11b6e3864b634d9">
-        <dex dex="/Users/abdirahman/Desktop/Movies/MovieList/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.2.0_280297a7138858f4bc6e0c128059b2a5be74abac.jar" />
-    </item>
-    <item
-        jar="/Users/abdirahman/Desktop/Movies/MovieList/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="6e3578f92f7462d1a935a1d36173e3bdd1234976">
-        <dex dex="/Users/abdirahman/Desktop/Movies/MovieList/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.2.0_d7c28495301dc740e34ca6ddb4bffa833038d5d0.jar" />
-    </item>
-    <item
         jar="/Users/abdirahman/Desktop/Movies/MovieList/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.0/jars/libs/internal_impl-23.2.0.jar"
         jumboMode="false"
         revision="23.0.2"
@@ -44,6 +23,13 @@
         <dex dex="/Users/abdirahman/Desktop/Movies/MovieList/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.2.0_92ec4fd097d14d98f1176f8d5e0c74ebc4b7bdaa.jar" />
     </item>
     <item
+        jar="/Users/abdirahman/Desktop/Movies/MovieList/app/build/intermediates/exploded-aar/com.android.support/design/23.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="1aa5b025efe97f5006f5be16d6ca67c6c3c0c0d8">
+        <dex dex="/Users/abdirahman/Desktop/Movies/MovieList/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.2.0_2686b10e0a2fb3dba796a0fa331558f6201e7535.jar" />
+    </item>
+    <item
         jar="/Users/abdirahman/Desktop/Movies/MovieList/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.2.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.2"
@@ -51,11 +37,25 @@
         <dex dex="/Users/abdirahman/Desktop/Movies/MovieList/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.2.0_6c93585dcb98fe960eea5b5d07e56343edc31d47.jar" />
     </item>
     <item
-        jar="/Users/abdirahman/Desktop/Movies/MovieList/app/build/intermediates/exploded-aar/com.android.support/design/23.2.0/jars/classes.jar"
+        jar="/Users/abdirahman/Desktop/Movies/MovieList/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.2.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="1aa5b025efe97f5006f5be16d6ca67c6c3c0c0d8">
-        <dex dex="/Users/abdirahman/Desktop/Movies/MovieList/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.2.0_2686b10e0a2fb3dba796a0fa331558f6201e7535.jar" />
+        sha1="d4c936aa8c7d2522c82e3f1829c791d9e367f009">
+        <dex dex="/Users/abdirahman/Desktop/Movies/MovieList/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.2.0_a3f76c6b67a6101fbf104aa247f2dbacd08f9663.jar" />
+    </item>
+    <item
+        jar="/Users/abdirahman/Desktop/Movies/MovieList/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e5f32fa48a3eb2de0c987025c11b6e3864b634d9">
+        <dex dex="/Users/abdirahman/Desktop/Movies/MovieList/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.2.0_280297a7138858f4bc6e0c128059b2a5be74abac.jar" />
+    </item>
+    <item
+        jar="/Users/abdirahman/Desktop/Movies/MovieList/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6e3578f92f7462d1a935a1d36173e3bdd1234976">
+        <dex dex="/Users/abdirahman/Desktop/Movies/MovieList/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.2.0_d7c28495301dc740e34ca6ddb4bffa833038d5d0.jar" />
     </item>
 
 </items>
