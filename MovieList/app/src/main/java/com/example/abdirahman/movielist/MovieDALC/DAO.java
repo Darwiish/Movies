@@ -39,7 +39,7 @@ public class DAO {
         }
         return db.insert(DB.TABLE_NAME, null, values);
     }
-    
+
     public int updateMovie(long id, Movie movie) {
         ContentValues values = new ContentValues();
         values.put(DB.TITLE, movie.getTitle());
