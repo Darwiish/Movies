@@ -26,9 +26,9 @@ public class MainActivity extends ListActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        InitializeTask t = new InitializeTask(this);//Create a task that will fetch the movies from API
-        t.execute(new MovieList());//Execute that task
-        DAO.createInstance(this);//Create an instance of DAO
+        InitializeTask t = new InitializeTask(this);
+        t.execute(new MovieList());
+        DAO.createInstance(this);
     }
 
     @Override
@@ -39,12 +39,12 @@ public class MainActivity extends ListActivity {
     }
 
     private void updateListWithDB() {
-        Cursor c = DAO.getInstance().getMovies();//get the cursor to the movies from db
-        if (c != null) { // if there are movies in db
+        Cursor c = DAO.getInstance().getMovies();
+        if (c != null) {
             while(c.moveToNext()) {
-                int Id = c.getInt(c.getColumnIndex(DB.ID)); //get the id of the movie
-                boolean stored = c.getInt(c.getColumnIndex(DB.STORED)) > 0; // get if the movies is stored
-                for(Movie m: movies){ //goes through the movies and if the movie is in db than we set it's stored parameter to true
+                int Id = c.getInt(c.getColumnIndex(DB.ID));
+                boolean stored = c.getInt(c.getColumnIndex(DB.STORED)) > 0;
+                for(Movie m: movies){
                     if(m.getId() == Id){
                         m.setStored(stored);
                     }
@@ -52,32 +52,25 @@ public class MainActivity extends ListActivity {
             }
             c.close();
         }
-        adapter.updateList(movies);//update the list in the adapter
+        adapter.updateList(movies);
     }
 
-    //parameter contains list of movies from API
     public void initializeData(final ArrayList<Movie> movies) {
-        this.movies = movies; //assign list of movies to local variable
-        adapter = new CustomListAdapter(this, this.movies); //create adapter for the listview
-        setListAdapter(adapter);// assigns the adapter to listview
-        updateListWithDB();//update the list in MainActivity with the data from database
-        //at this point we have a list of movie titles without images
+        this.movies = movies;
+        adapter = new CustomListAdapter(this, this.movies);
+        setListAdapter(adapter);
+        updateListWithDB();
         Log.d(TAG, "Adapter attached");
 
-        //here we download images and refresh the list
         ImageDownloadTask t = new ImageDownloadTask(adapter);
         t.execute(movies);
 
-        //assign the onclick listner
         getListView().setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-                Movie movie = movies.get(position); //fetch the movie from adapter at give position
+                Movie movie = movies.get(position);
 
-                //Create an intent to start a new Activity
-                //This is an explicit intent.. we say exactly what activity to run.
                 Intent i = new Intent(MainActivity.this, DetailActivity.class);
-                //The values we want the DetailsActivity to know is add to the intent
                 i.putExtra("id", movie.getId());
                 i.putExtra("imageURL", movie.getImageURL());
                 i.putExtra("image", movie.getImage());
@@ -85,7 +78,7 @@ public class MainActivity extends ListActivity {
                 i.putExtra("release", movie.getRelease());
                 i.putExtra("overview", movie.getOverview());
                 i.putExtra("stored", movie.isStored());
-                startActivityForResult(i, 1);//send the intent
+                startActivityForResult(i, 1);
             }
         });
     }

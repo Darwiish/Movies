@@ -11,7 +11,7 @@ import java.net.URL;
 import java.util.ArrayList;
 
 
-public class ImageDownloadTask extends AsyncTask<ArrayList<Movie>, Void, ArrayList<Movie>> // output of doInBackground
+public class ImageDownloadTask extends AsyncTask<ArrayList<Movie>, Void, ArrayList<Movie>>
     {
     CustomListAdapter list;
 
@@ -26,12 +26,11 @@ public class ImageDownloadTask extends AsyncTask<ArrayList<Movie>, Void, ArrayLi
             String urlOfImage = m.getImageURL();
             Bitmap logo = null;
             try {
-                InputStream is = new URL(urlOfImage).openStream();//downloads the stream of binary data
-                logo = BitmapFactory.decodeStream(is);//converts the binary data from stream to bitmap
-            } catch (Exception e) { // Catch the download exception
+                InputStream is = new URL(urlOfImage).openStream();
+                logo = BitmapFactory.decodeStream(is);
+            } catch (Exception e) {
                 e.printStackTrace();
             }
-            //scale down the image to 40%
             float scale = 0.4F;
             Bitmap bm = Bitmap.createScaledBitmap(logo, (int) (logo.getWidth() * scale), (int) (logo.getHeight() * scale), true);
             m.setImage(bm);
@@ -41,7 +40,7 @@ public class ImageDownloadTask extends AsyncTask<ArrayList<Movie>, Void, ArrayLi
 
     @Override
     protected void onPostExecute(final ArrayList<Movie> newData) {
-        list.updateList(newData); //update the movies in the adapter with a new movies(that have images)
+        list.updateList(newData);
     }
 }
 

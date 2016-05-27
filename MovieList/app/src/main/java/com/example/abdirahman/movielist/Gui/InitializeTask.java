@@ -18,10 +18,8 @@ import java.util.ArrayList;
 
 public class InitializeTask extends AsyncTask<
 
-        MovieList, // collection of MovieList to execute
-    Void, // to type of progress info
-    ArrayList<Movie>> // output of doInBackground
-    {
+        MovieList, Void, ArrayList<Movie>>
+{
 
         MainActivity m_context;
 
@@ -31,16 +29,14 @@ public class InitializeTask extends AsyncTask<
 
         @Override
         protected ArrayList<Movie> doInBackground(MovieList... ms) {
-        // params comes from the execute()
 
-        ms[0].loadAll(); // prepare the list of movies
-        return ms[0].getAll(); // getAll returns the list of movies
+        ms[0].loadAll();
+        return ms[0].getAll();
     }
 
-        // onPostExecute displays the results of the AsyncTask.doInBackground().
-        // this method is invoked by the GUI thread
+
         @Override
         protected void onPostExecute(final ArrayList<Movie> movies) {
-        m_context.initializeData(movies);//In MainActivity it create a listview, updates the local db and displays the list of movies
+        m_context.initializeData(movies);
     }
     }

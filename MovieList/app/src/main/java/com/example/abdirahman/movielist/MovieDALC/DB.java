@@ -10,7 +10,6 @@ public class DB extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "movies.db";
 
     public static final String TABLE_NAME = "movies";
-    // for cursor adapter the table (or the cursor) must include a column named "_id"
     public static final String ID = "_id";
     public static final String TITLE = "title";
     public static final String RELEASE = "release";

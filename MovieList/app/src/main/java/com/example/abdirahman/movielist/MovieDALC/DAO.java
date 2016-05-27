@@ -62,7 +62,6 @@ public class DAO {
         return db.update(DB.TABLE_NAME, values, DB.ID_EQUAL, DB.stringArray(id));
     }
 
-    // returens a cusor contaning
     public Cursor getMovies() {
         return db.query(DB.TABLE_NAME, DB.ALL_COLUMNS, null, null, null, null,
                 null);

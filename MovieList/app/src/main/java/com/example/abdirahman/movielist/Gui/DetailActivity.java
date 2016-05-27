@@ -43,21 +43,18 @@ public class DetailActivity extends AppCompatActivity {
 
         Log.e("MovieList", "Received movie: " + movie.toString());
 
-        //Get the refrence to elements in the layout
         final ImageView image = (ImageView) findViewById(R.id.poster);
         TextView releaseDate = (TextView) findViewById(R.id.releaseDate);
         TextView overview = (TextView) findViewById(R.id.overview);
         btnStore = (ImageButton) findViewById(R.id.btnStore);
 
-        // Set text on both textViews
         image.setImageBitmap(movie.getImage());
         releaseDate.setText(movie.getRelease());
         overview.setText(movie.getOverview());
 
-        updateImageButton();//updates the star icon depending on the movies "store" status
+        updateImageButton();
 
-        //when the user click on the ImageButton than the status of the movie in the db is updated
-        // and the icon of the image button is updated
+
         btnStore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -82,10 +79,7 @@ public class DetailActivity extends AppCompatActivity {
     }
 
     @Override
-    public void onBackPressed() {//when you go back from details activity
-        //send the intent to MainActivity with the id and stored status
-        //so that the MainActivity knows if the movie was updated or not
-        //
+    public void onBackPressed() {
         super.onBackPressed();
         Intent i = new Intent();
         i.putExtra("id", movie.getId());
