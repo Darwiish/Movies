@@ -39,15 +39,7 @@ public class DAO {
         }
         return db.insert(DB.TABLE_NAME, null, values);
     }
-
-    public int deleteMovie(long id) {
-        return db.delete(DB.TABLE_NAME, DB.ID_EQUAL, DB.stringArray(id));
-    }
-
-    public int deleteMovies() {
-        return db.delete(DB.TABLE_NAME, null, null);
-    }
-
+    
     public int updateMovie(long id, Movie movie) {
         ContentValues values = new ContentValues();
         values.put(DB.TITLE, movie.getTitle());
